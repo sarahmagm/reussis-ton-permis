@@ -11,6 +11,21 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://reussis-ton-permis.fr/blog/financer-permis-cpf.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reussis-ton-permis.fr/blog/auto-ecole-en-ligne-vs-traditionnelle.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://reussis-ton-permis.fr/blog/reviser-code-de-la-route.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://reussis-ton-permis.fr/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
