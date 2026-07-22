@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réussis Ton Permis — Bons plans & astuces permis de conduire</title>
+<meta name="description" content="Codes de réduction vérifiés, comparatifs d'auto-écoles en ligne, astuces CPF — le blog qui décrypte les vrais bons plans permis.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@500;700&display=swap');
+
+  :root{
+    --ink: #1E2A3A;
+    --coral: #FF6B4A;
+    --coral-deep: #E8532F;
+    --grey: #8D899E;
+    --white: #FFFFFF;
+    --paper: #FAF9F7;
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background: var(--paper); color: var(--ink); font-family:'Inter', sans-serif; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3,.display{ font-family:'Urbanist', sans-serif; font-weight:800; line-height:1.02; letter-spacing:-0.02em; }
+
+  header{ padding: 24px 6vw; }
+  .nav{ display:flex; align-items:center; justify-content:space-between; max-width:1180px; margin:0 auto; }
+  .logo{ display:flex; align-items:center; gap:10px; text-decoration:none; font-family:'Urbanist'; font-weight:800; font-size:20px; color:var(--ink); }
+  nav.links{ display:flex; gap:30px; font-size:14.5px; font-weight:600; }
+  nav.links a{ color: var(--grey); text-decoration:none; }
+  nav.links a:hover{ color: var(--ink); }
+
+  .hero{ background: var(--ink); border-radius: 0 0 40px 40px; padding: 20px 6vw 0; overflow:hidden; position:relative; }
+  .hero-grid{ max-width:1180px; margin:0 auto; display:grid; grid-template-columns: 1.1fr .9fr; gap:40px; align-items:end; padding-bottom: 60px; padding-top:40px; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:8px; background: rgba(255,255,255,0.1); color: var(--coral); font-weight:700; font-size:13px; padding:8px 15px; border-radius:999px; margin-bottom:22px; }
+  .hero h1{ font-size: clamp(36px, 5vw, 56px); color: white; margin: 0 0 18px; }
+  .hero h1 mark{ background: var(--coral); color: white; padding: 0 8px; border-radius: 8px; }
+  .hero p{ font-size:17px; color: rgba(255,255,255,0.75); max-width:42ch; line-height:1.55; margin:0 0 30px; font-weight:500; }
+
+  .ticket{ background: white; border-radius: 22px; padding: 26px; box-shadow: 0 30px 60px rgba(0,0,0,0.32); }
+  .ticket-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; }
+  .ticket .tag{ font-size:12px; font-weight:700; color: var(--grey); text-transform:uppercase; letter-spacing:.05em; }
+
+  .amount{ font-family:'Urbanist'; font-weight:900; font-size:52px; color: var(--ink); margin: 4px 0 18px; }
+  .amount small{ font-size:16px; font-weight:600; color: var(--grey); font-family:'Inter'; margin-left:6px; }
+
+  .code-row{ background: var(--paper); border-radius:14px; padding:14px 16px; display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; border: 1.5px dashed #E5DFD8; }
+  .code-row b{ font-family:'Space Mono'; font-size:15px; color: var(--coral-deep); }
+  .copy-btn{ background: var(--ink); color:white; border:none; border-radius:9px; padding:9px 15px; font-weight:700; font-size:12.5px; cursor:pointer; }
+  .note{ font-size:12.5px; color: var(--grey); }
+
+  section{ padding: 66px 6vw; max-width:1180px; margin:0 auto; }
+  .section-head{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:32px; }
+  .section-head h2{ font-size:27px; }
+  .section-head a{ color: var(--coral-deep); font-weight:700; font-size:14px; text-decoration:none; }
+
+  .grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:22px; }
+  .card{ background: white; border-radius:20px; overflow:hidden; text-decoration:none; color:inherit; border:1px solid #EDEAE4; transition: transform .18s ease, box-shadow .18s ease; }
+  .card:hover{ transform: translateY(-5px); box-shadow: 0 18px 34px rgba(30,42,58,0.09); }
+  .card-thumb{ height:120px; display:flex; align-items:center; justify-content:center; font-size:34px; }
+  .thumb-1{ background: #FDE6DE; } .thumb-2{ background: #E4EFEC; } .thumb-3{ background: #EFEAE0; }
+  .card-body{ padding:20px; }
+  .card-cat{ font-size:11px; font-weight:700; color: var(--coral-deep); text-transform:uppercase; letter-spacing:.05em; }
+  .card h3{ font-family:'Urbanist'; font-weight:700; font-size:17px; margin:8px 0 8px; letter-spacing:-0.01em; }
+  .card p{ font-size:13.5px; color: var(--grey); margin:0; line-height:1.5; font-weight:500; }
+
+  .ad-slot{ background: white; border: 1.5px dashed #E5DFD8; border-radius:16px; display:flex; align-items:center; justify-content:center; color: var(--grey); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; padding: 30px; margin-top: 10px; }
+
+  footer{ background: var(--ink); color: rgba(255,255,255,0.5); padding: 36px 6vw; font-size:13px; }
+  .footer-inner{ max-width:1180px; margin:0 auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; align-items:center; }
+  footer a{ color: rgba(255,255,255,0.8); text-decoration:none; }
+  footer .brand{ color:white; font-family:'Urbanist'; font-weight:800; font-size:15px; }
+
+  @media (max-width: 900px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .grid{ grid-template-columns:1fr; }
+    nav.links{ gap:16px; font-size:13px; flex-wrap:wrap; justify-content:flex-end; }
+    .hero h1{ font-size:32px; }
+    section{ padding:44px 6vw; }
+    .ticket{ padding:20px; }
+    .amount{ font-size:42px; }
+  }
+  @media (max-width: 480px){
+    nav.links{ display:none; }
+    .nav{ justify-content:space-between; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="/" class="logo">
+      <svg width="30" height="30" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#1E2A3A"/><path d="M16 40 L24 32 L16 24" fill="none" stroke="#FF6B4A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"/><path d="M27 44 L37 32 L27 20" fill="none" stroke="#FF6B4A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/><path d="M40 48 L52 32 L40 16" fill="none" stroke="#FF6B4A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Réussis Ton Permis
+    </a>
+    <nav class="links">
+      <a href="/blog/financer-permis-cpf">CPF</a>
+      <a href="/blog/auto-ecole-en-ligne-vs-traditionnelle">Comparatifs</a>
+      <a href="/blog/reviser-code-de-la-route">Code de la route</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Bons plans vérifiés à la main</span>
+      <h1>Réussis ton permis <mark>sans te ruiner.</mark></h1>
+      <p>Codes vérifiés, comparatifs honnêtes, astuces CPF — les vrais bons plans permis, sans blabla.</p>
+    </div>
+
+    <div class="ticket">
+      <div class="ticket-head">
+        <span class="tag">Bon plan du moment</span>
+      </div>
+      <div class="amount">-40€ <small>sur ton inscription</small></div>
+      <div class="code-row">
+        <b>STYCH-0DFBA641</b>
+        <button class="copy-btn" onclick="navigator.clipboard.writeText('STYCH-0DFBA641'); this.textContent='Copié ✓'">Copier</button>
+      </div>
+      <p class="note">Code de parrainage personnel, à utiliser lors de ton inscription sur Stych.fr.</p>
+    </div>
+  </div>
+</div>
+
+<section id="articles">
+  <div class="section-head">
+    <h2>Nos derniers articles</h2>
+    <a href="#">Tout voir →</a>
+  </div>
+  <div class="grid">
+    <a href="/blog/auto-ecole-en-ligne-vs-traditionnelle" class="card">
+      <div class="card-thumb thumb-1">📚</div>
+      <div class="card-body">
+        <span class="card-cat">Comparatif</span>
+        <h3>Auto-école en ligne vs. traditionnelle</h3>
+        <p>Prix, délais, taux de réussite : on compare sans filtre.</p>
+      </div>
+    </a>
+    <a href="/blog/financer-permis-cpf" class="card">
+      <div class="card-thumb thumb-2">💰</div>
+      <div class="card-body">
+        <span class="card-cat">CPF</span>
+        <h3>Financer son permis avec le CPF en 2026</h3>
+        <p>Solde, éligibilité, pièges à éviter.</p>
+      </div>
+    </a>
+    <a href="/blog/reviser-code-de-la-route" class="card">
+      <div class="card-thumb thumb-3">🚦</div>
+      <div class="card-body">
+        <span class="card-cat">Révisions</span>
+        <h3>5 habitudes pour réviser le code</h3>
+        <p>Des méthodes qui marchent vraiment.</p>
+      </div>
+    </a>
+  </div>
+  <div class="ad-slot">Emplacement publicitaire (AdSense)</div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span class="brand">Réussis Ton Permis</span>
+    <span>Site indépendant, non affilié officiellement à Stych.</span>
+    <span><a href="/mentions-legales">Mentions légales</a> · <a href="/contact">Contact</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
